@@ -355,21 +355,25 @@ section.s5 .groupSkil .web li{
 section.s5 .jav{
     box-shadow: 1px 1px 40px #ed0b12;
     animation: lamp1 3s linear infinite;
+    transition: .4s;
 }
 
 section.s5 .html{
     box-shadow: 1px 1px 40px #ed4f0b;
     animation: lamp2 3s linear infinite;
+    transition: .4s;
 }
 
 section.s5 .css{
     box-shadow: 1px 1px 40px #3e0ded;
     animation: lamp3 3s linear infinite;
+    transition: .4s;
 }
 
 section.s5 .js{
     box-shadow: 1px 1px 40px #9bed0d;
     animation: lamp4 3s linear infinite;
+    transition: .4s;
 }
 
 
