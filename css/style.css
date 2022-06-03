@@ -254,12 +254,22 @@ section.s3 p{
 
 .button:hover{
     color: #fff;
+    cursor: pointer;
 }
 
 
 
 .button:hover::before{
     width: 150%;
+}
+
+.close li{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.close li:hover{
+    text-decoration: underline;
 }
 
 

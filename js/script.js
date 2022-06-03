@@ -49,3 +49,15 @@ for(let i = 1; i <= 7; i++) {
     </div>
   `);
 }
+
+
+// course
+$('.close, .c').hide();
+
+$('.button').on('click', function() {
+  $('.close, .c').show();
+});
+
+$('.c').on('click', function() {
+  $('.close, .c').hide();
+});
