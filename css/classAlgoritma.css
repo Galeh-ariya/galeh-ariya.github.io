@@ -1,0 +1,299 @@
+/* body */
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FFFFFF;
+    font-family: SF Pro Display, "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1D1D1F;
+}
+
+/* endBody */
+
+/* navbar */
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333333;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    scroll-behavior: smooth;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #CCC;
+}
+
+.logo{
+    margin-right: 50px;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler, .navbar label{
+    display: none;
+}
+
+/* endNavbar */
+
+
+/* DescriptionClass */
+section.s1 {
+    display: flex;
+    padding: 50px;
+    justify-content: space-around;
+    
+}
+
+section.s1 .imgs1{
+    padding: 50px;
+    flex: 2;
+    
+}
+
+section.s1 .descs1{
+    flex: 2;
+    align-self: center;
+    padding: 50px; 
+}
+
+section.s1 h2, p{
+    text-align: center;
+}
+
+section.s1 h2{
+    font-size: 25px;
+}
+
+section.s1  p{
+    font-size: 20px;
+}
+
+section.s1 .btn1{
+    text-decoration: none;
+    font-size: 20px;
+    color: #0071E3;
+    padding: 10px 10px;
+    border: 3px solid #0071E3;
+    position: relative;
+    top: 25px;
+    left: 190px;
+}
+
+.btn1::before,
+.btn1::after{
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: inherit;
+    transition: all .5s;
+}
+
+.btn1::before{
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+
+.btn1::after{
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+
+.btn1:hover::before,
+.btn1:hover::after{
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+
+}
+
+/* endDescriptonClass */
+
+
+/* Materi */
+section.s2{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 110px;
+}
+
+section.s2 .materi{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px #CCC;
+    flex: 2;
+}
+
+section.s2 .sub{
+    display: flex;
+    justify-content: space-between;
+}
+
+section.s2 .item{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    flex: 2;
+    box-shadow: 1px 1px 10px #CCC;
+}
+
+section.s2 .close1{
+    align-self: center;
+}
+
+section.s2 .author{
+    flex: 1;
+    padding-left: 50px;
+}
+
+section.s2 .imgs2{
+    display: flex;
+    justify-content: space-around;
+}
+
+section.s2 .imgs2 img{
+    width: 35%;
+    display: block;
+    border-radius: 50%; 
+    border: 5px solid rgb(30, 24, 24);
+}
+
+section.s2 .imgs2 h2{
+    align-self: center;
+}
+
+section.s2 .dscs2 p{
+    text-align: left;
+    margin-top: 30px;
+}
+
+
+/* endMateri */
+
+/* util */
+.pagar{
+    width: 100%;
+    height: 10px;
+    background-color: #F5F5F7;
+}
+
+.btn2{
+    background-color: #0071E3;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: #FFF;
+}
+
+.btn3{
+    background-color: #12161a;
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    color: #FFF;
+    margin-top: 20px;
+}
+/* util */
+
+
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    /* navbar */
+    .menu{
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    .list{
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .navbar label{
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+        color: white;
+    }
+
+    #toggler:checked ~ .menu{
+        max-height: 100%;
+    }
+
+    /* endNavbar */
+
+    /* DescriptionClass */
+    section.s1 {
+        display: block;
+        padding: 20px;
+    }
+
+    section.s1 .imgs1{
+        padding: 0;
+    }
+
+    section.s1 .descs1{
+        padding: 10px;
+    }
+
+    section.s1 h2{
+        font-size: 30px;
+    }
+    
+    section.s1  p{
+        font-size: 15px;
+    }
+
+    section.s1 .btn1{
+        text-decoration: none;
+        font-size: 20px;
+        color: #0071E3;
+        padding: 10px 10px;
+        border: 3px solid #0071E3;
+        position: relative;
+        top: 35px;
+        left: 90px;
+    }
+    /* endDescription */
+
+    /* Materi */
+    section.s2 .item{
+        width: 100%;
+        margin-bottom: -30px;
+    }
+
+    iframe{
+        width: 240px;
+        height: 160px;
+    }
+
+    section.s2 .author{
+        display: none;
+    }
+
+    /* endMateri */
+
+    /* util */
+    .pagar{
+        margin-top: 90px;
+    }
+    /* endutil */
+}
