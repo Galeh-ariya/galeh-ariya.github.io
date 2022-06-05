@@ -1,8 +1,4 @@
 /* body */
-html{
-    scroll-behavior: smooth;
-}
-
 body{
     background-color: #FFFFFF;
     font-family: SF Pro Display, "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -10,42 +6,6 @@ body{
 }
 
 /* endBody */
-
-/* navbar */
-.navbar{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #333333;
-    padding: 15px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    scroll-behavior: smooth;
-}
-
-.navbar a{
-    text-decoration: none;
-    color: #CCC;
-}
-
-.logo{
-    margin-right: 50px;
-}
-
-.list{
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-#toggler, .navbar label{
-    display: none;
-}
-
-/* endNavbar */
-
 
 /* DescriptionClass */
 section.s1 {
@@ -214,31 +174,6 @@ section.s2 .dscs2 p{
 
 /* Responsive */
 @media only screen and (max-width: 600px) {
-    /* navbar */
-    .menu{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
-
-    .list{
-        flex-direction: column;
-        align-items: center;
-        padding: 20px;
-    }
-
-    .navbar label{
-        display: inline-flex;
-        align-items: center;
-        cursor: pointer;
-        color: white;
-    }
-
-    #toggler:checked ~ .menu{
-        max-height: 100%;
-    }
-
-    /* endNavbar */
 
     /* DescriptionClass */
     section.s1 {

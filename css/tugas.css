@@ -1,0 +1,128 @@
+body{
+    background-color: lightgrey;
+    font-family: SF Pro Display, "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #1D1D1F;
+}
+
+section.s1{
+    margin-top: 20px;
+}
+
+/* Menu */
+.scroller{
+    max-width: 700px;
+    padding: 10px;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 1em;
+    overflow-x: auto;
+    box-shadow: 1px 1px 3px #1D1D1F;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.scroller:hover{
+    cursor: pointer;
+}
+
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+
+.scroller-item{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border: 4px solid #151515;
+    border-radius: 50%;
+}
+
+.scroller-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.scroller-item::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% + 15px);
+    height: calc(100% + 15px);
+    background-image: linear-gradient(45deg,
+    #f09433 0%, #e6683c 25%, #dc2743 50%,
+    #6902be 75%, #bc1888 100%);
+    border-radius: inherit;
+    z-index: -1;
+}
+/* endMenu */
+
+/* Content */
+
+section.s2{
+    margin: 20px;
+}
+
+section.s2 .content{
+    background-color: #FFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px #6d6d74;
+}
+
+section.s2 .definit{
+    text-align: justify;
+    padding: 0 150px;
+}
+
+section.s2 .definit p{
+    font-size: 18px;
+}
+
+section.s2 .img{
+    padding: 0 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.design{
+    width: 100px;
+    height: 10px;
+    background-image: linear-gradient(to bottom right, #dc2743, #bc1888);
+}
+/* endContent */
+
+
+/* responsive */
+@media only screen and (max-width: 600px) {
+
+    section.s2{
+        margin: 4px;
+    }
+
+    section.s2 .content{
+        padding: 15px;
+    }
+
+    section.s2 .definit{
+        text-align: justify;
+        padding: 0 10px;
+    }
+
+    section.s2 .definit p{
+        font-size: 15px;
+    }
+
+    section.s2 .img{
+        padding: 0;
+    }
+
+    section.s2 .img img{
+        width: 300px;
+    }
+
+}
