@@ -1,0 +1,54 @@
+body{
+    font-family: SF Pro Display, "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.load{
+    position: fixed;
+    background-color: rgb(7, 5, 5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    color: #fff;
+    text-align: center;
+}
+
+.loader{
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    justify-content: center;
+    margin-top: 15%;
+}
+
+.bar{
+    display: inline-block;
+    width: 7px;
+    height: 50px;
+    background-color: rgba(12, 1, 1, 0.5);
+    border-radius: 10px;
+    animation: scale-up 1s linear infinite;
+    
+}
+
+.bar:nth-child(2){
+    height: 60px;
+    margin: 0 5px;
+    animation-delay: .25s;
+}
+
+.bar:nth-child(3){
+    animation-delay: .5s;
+}
+
+@keyframes scale-up{
+    20%{
+        background-color: #fff;
+        transform: scaleY(1.5);
+    }
+
+    40%{
+        transform: scaleY(1);
+    }
+}
