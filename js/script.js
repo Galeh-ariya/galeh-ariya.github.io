@@ -42,7 +42,7 @@ $(window).scroll(function() {
 })
 
 // Gallery
-for(let i = 1; i <= 7; i++) {
+for(let i = 1; i <= 8; i++) {
   $('#img').append(`
     <div class="cards">
       <div class="card"><img src="img/pap`+ i +`.jpg" width="100%"></div>
