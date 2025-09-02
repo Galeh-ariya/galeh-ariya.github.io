@@ -1,202 +1,1080 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:55:47 GMT -->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <title>Galeh | Personal Portofolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#151516">
-    
-    <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
-    
-    <link rel="icon" href="img/lap.png">
-    <title>Galeh Ariya Irwana</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/load.css">
+    <meta name="description" content="Personal Website for Galeh Ariya Irwana As Software Developer and Data Engineer" />
+    <meta name="keywords" content="galeh ariya irwana" />
+    <meta content="Leh Min Ho" name="author" />
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" id="bootstrap-style" />
+
+    <!-- Material Icon Css -->
+    <link rel="stylesheet" href="css/materialdesignicons.min.css" type="text/css" />
+
+    <!-- Unicon Css -->
+    <link rel="stylesheet" href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css" />
+    <link rel="stylesheet" href="css/tiny-slider.css.html" type="text/css" />
+    <link rel="stylesheet" href="css/swiper.min.css" type="text/css" />
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.min.css" type="text/css" />
+
+
 </head>
-<body>
 
-    <!-- loader v1 -->
-    <!-- <div class="load" id="load">
-        <div class="loader">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <h3>Please wait...</h3>
-    </div> -->
-    <!-- loader -->
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
 
-    <!-- loader v2 -->
-    <div class="container" id="container">
-        <div class="loader">
-        
-        </div>
-        <h2>Please wait...</h2>
-    </div>
-    <!-- endloader -->
-    
-    <!-- Navbar -->
-    <nav class="navbar">
-        <a href="#" class="logo">GALEH<i class="fas fa-code"></i></a>
-        <input type="checkbox" id="toggler">
-        <label for="toggler"><i class="fas fa-bars"></i></label>
-        <div class="menu">
-            <ul class="list">
-                <li><a href="#">Home</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#course">Class</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <!-- endNavbar -->
+    <!-- light-dark mode button -->
+    <a href="javascript: void(0);" id="mode" class="mode-btn text-white rounded-end">
+        <i class="uil uil-brightness mode-dark mx-auto"></i>
+        <i class="uil uil-moon bx-spin mode-light"></i>
+    </a>
 
-    <!-- Profile -->
-    <section class="s1">
-        <div class="imgs1">
-            <img src="img/me2.jpg" alt="fotoku">
-            <h2>Galeh Ariya Irwana</h2>
-        </div>
-        <div class="description">
-            <h1>SOFTWARE ENGINEER</h1>
 
-            <a href="https://unusa.ac.id/" target="_blank"><h2>From Universitas Nahdlatul Ulama Surabaya</h2></a>
-
-            <p>Welcome to my website, my name is Galeh Ariya irwana, i am a student at one of the <br> nahdlatul ulama surabaya universities</p>
-
-            <h3>
-                Java Development
-                <br>
-                Web Development
-                <br>
-                Backend Engineer
-                <br>
-            </h3>
-
-            <a href="#skills">
-                <button class="shadowBtn">
-                    Learn More...
-                </button>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
+        <div class="container-fluid custom-container">
+            <a class="navbar-brand logo text-uppercase" href="index.html">
+                <img src="images/logo-light.png" class="logo-light" alt="" height="34">
+                <img src="images/logo-dark.png" class="logo-dark" alt="" height="34">
             </a>
-        </div>
-    </section>
 
-    <!-- endProfile -->
+            <button class="navbar-toggler me-3 order-2 ms-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-label="Toggle navigation">
+                <i class="mdi mdi-menu"></i>
+            </button>
 
-    <div id="skills"></div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto navbar-center">
+                    <li class="nav-item active">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#aboutme" class="nav-link ">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown dropdown-hover">
+                        <a href="#service" class="nav-link ">Service</a>
+                    </li>
 
-    <!-- Skils -->
-    <section class="s5">
-        <h1>Skills</h1>
-
-        <div class="groupSkil">
-            <div class="beckend">
-                <h3>Beckend</h3>
-                    <i class="fab fa-java fa-8x jav"></i>
-            </div>
-
-            <div class="web">
-                <h3>Frontend</h3>
-
-                <ul>
-                    <li><i class="fab fa-html5 fa-5x html"></i></li>
-                    <li><i class="fab fa-css3-alt fa-5x css"></i></li>
-                    <li><i class="fab fa-js fa-5x js"></i></li>
+                    <!-- <li class="nav-item dropdown dropdown-hover">
+                        <a href="#work" class="nav-link ">Work</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a href="#pricing" class="nav-link">Pricing</a>
+                    </li> -->
+                    <!-- <li class="nav-item">
+                        <a href="#testi" class="nav-link">Testimonial</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Client</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
                 </ul>
+                <!--end navbar-nav-->
+                <!-- <div class="ms-auto ps-2 ps-lg-0">
+                    <a href="#" class="btn btn-dark rounded-pill my-3 my-lg-0" data-bs-toggle="modal" data-bs-target="#exampleModal">ASK ME</a>
+                </div> -->
+                <div class="ms-auto ps-2 ps-lg-0">
+                    <a href="#contact" class="btn btn-dark rounded-pill my-3 my-lg-0">ASK ME</a>
+                </div>
+            </div>
+        </div>
+        <!--end container-->
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">ASK ME</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <form class="row g-3 needs-validation">
+                        <div class="col-md-6">
+                            <label for="validationCustom01" class="form-label">First name <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom01" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom02" class="form-label">Email <span
+                                    class="text-primary">*</span></label>
+                            <input type="email" class="form-control" id="validationCustom02" value="" required>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom03" class="form-label">Subject <span
+                                    class="text-primary">*</span></label>
+                            <input type="text" class="form-control" id="validationCustom03" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid city.
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="validationCustom05" class="form-label">Password <span
+                                    class="text-primary">*</span></label>
+                            <input type="password" class="form-control" id="validationCustom05" required>
+                            <div class="invalid-feedback">
+                                Please provide a valid zip.
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <label for="validationTextarea" class="form-label">Textarea<span
+                                    class="text-primary">*</span></label>
+                            <textarea class="form-control" id="validationTextarea" required></textarea>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+
+    <!-- home section -->
+    <section class="home" id="home" style="background-image: url(images/bg-home.png);">
+        <!-- start container -->
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="home-slider" id="home-slider">
+                        <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <p class="text-warning fw-semibold mb-0">Hello! I AM</p>
+                                        <div class="home-title mb-0 fw-bold h1">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Galeh Ariya Irwana.","Software Developer","Graduate based in UNUSA." ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </div>
+                                        <p class="mt-3 text-muted">Building simple and elegant solutions
+                                            for complex software challenges is what I enjoy most about my work. I am also interested in crafting beautiful, minimalistic applications and exploring innovative technologies.
+                                        </p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                
+                                                <a target="_blank" href="https://www.instagram.com/galeh_min_h0/">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                <a target="_blank" href="https://www.linkedin.com/in/galeh-ariya-irwana-16101630b/">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+                                                <a target="_blank" href="https://github.com/Galeh-ariya">
+                                                    <div class="social-icon twitter avatar-sm">
+                                                        <i class="mdi mdi-github"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="home-link d-inline-block mt-5">
+                                            <div class="d-flex align-items-center">
+                                                <div class="btn-link ">
+                                                    <a href="#work" class="text-dark h6">
+                                                        <div class="read-link btn-link-warning"><span>See my work
+                                                            </span></div>
+                                                    </a>
+                                                </div>
+                                                <div class="btn-link-icon">
+                                                    <img src="images/home/right-arrow.png" alt=""
+                                                        class="img-fluid ms-3">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-5">
+                                    <div class="my-image">
+                                        <img src="images/home/home.png" alt="" width="1000" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <!-- <div class="item">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="content-item">
+                                        <p class="text-blue fw-semibold mb-0">Hello! I AM</p>
+                                        <h1 class="home-title mb-0 text-dark fw-bold">
+                                            <span class="typewrite " data-period="2000"
+                                                data-type='[ "Ray Glam.","Web Enthusiast.","Graduate based in NYC." ]'>
+                                                <span class="wrap text-dark"></span>
+                                            </span>
+                                        </h1>
+                                        <p class="mt-3 text-muted">Building simple and beautiful things for complex
+                                            interfaces is what I enjoy most about my work. I am also interested in
+                                            crafting beautiful minimal products and exploring new worlds.</p>
+
+                                        <div class="icon-item mt-4">
+                                            <div class="d-flex">
+                                                <a href="#">
+                                                    <div class="social-icon facebook avatar-sm">
+                                                        <i class="mdi mdi-facebook"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon instagram avatar-sm">
+                                                        <i class="mdi mdi-instagram"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon twitter avatar-sm">
+                                                        <i class="mdi mdi-twitter"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon linkedin avatar-sm">
+                                                        <i class="mdi mdi-linkedin"></i>
+                                                    </div>
+                                                </a>
+                                                <a href="#">
+                                                    <div class="social-icon pinterest avatar-sm">
+                                                        <i class="mdi mdi-pinterest"></i>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="home-link d-flex align-items-center mt-5">
+                                            <div class="btn-link">
+                                                <a href="#" class="text-dark h6">
+                                                    <div class="read-link btn-link-blue"><span>See my work </span></div>
+                                                </a>
+                                            </div>
+                                            <div class="btn-link-icon">
+                                                <img src="images/home/right-arrow.png" alt="" class="img-fluid ms-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="my-image">
+                                        <img src="images/home/home-4.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- slider item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end home section -->
+
+
+
+    <!-- about-me section -->
+    <section class="section about-me" id="aboutme">
+        <!-- container -->
+        <div class="container">
+            <div class="about-box">
+                <div class="row">
+
+                    <div class="col-lg-6 position-relative">
+                        <div class="image-round"></div>
+                        <div class="about-image p-4 pb-0">
+                            <img src="images/about.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="about-item p-5">
+                            <h2 class="display-5 fw-semibold">About Me</h2>
+                            <p class="text-muted fs-14">I'm a passionate software developer skilled in JavaScript, PHP, Java, Python, Dart, and C# for Unity. I excel at creating innovative, user-friendly solutions and have a proven track record in web development, mobile apps, and enterprise software. With a strong foundation in computer science, I focus on writing clean, maintainable code that meets and exceeds expectations.</p>
+
+                            <ul class="nav nav-pills mb-3 mt-4 pt-2" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">Skills</button>
+                                </li>
+                                <!-- <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">Experience</button>
+                                </li> -->
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-contact" type="button" role="tab"
+                                        aria-controls="pills-contact" aria-selected="false">Education</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Software Developer</h6>
+                                            <h6>90%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Project Manager</h6>
+                                            <h6>85%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="skill-item mt-4 pt-2">
+                                        <div class="d-flex justify-content-between">
+                                            <h6>Data Engineer</h6>
+                                            <h6>80%</h6>
+                                        </div>
+                                        <div class="progress" style="height: 5px;">
+                                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+
+                                    <div class="experience">
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Developer</h5>
+                                                    <p class="text-muted fs-15">2000-2004 (4 year Experience)</p>
+                                                    <p class="text-muted fs-15">There are many variations of passages of
+                                                        Lorem Ipsum available, but the majority have fered altation in
+                                                        some form, by injmour, or randomised words which don't look even
+                                                        slightlievable. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                    aria-labelledby="pills-contact-tab">
+                                    <div class="experience">
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Computer and Network Engineering</h5>
+                                                    <p class="text-muted fs-15 mb-0">2019-2021 (3 year)</p>
+                                                    <p class="text-muted fs-15 mb-0">I have extensive experience in network installations and hold a certification in Mikrotik, demonstrating my expertise in network configuration and management.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row position-relative">
+                                            <div class="col-2">
+                                                <div class="border-left"></div>
+                                            </div>
+                                            <div class="col-10">
+                                                <div class="mt-4 pt-2">
+                                                    <h5>Information System</h5>
+                                                    <p class="text-muted fs-15 mb-0">2021-2025 (4 year)</p>
+                                                    <p class="text-muted fs-15">During my Information System studies from 2021 to 2025, I have undertaken numerous projects, including web development, mobile app creation, and VR/AR applications. Additionally, I have successfully led several projects as a project manager, demonstrating my ability to manage teams and deliver results.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end about-me -->
+
+
+    <!-- start service -->
+    <section class="section service" id="service">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-5">
+                        <h6 class="mb-0 text-muted fs-15">WHAT WE OFFER</h6>
+                        <h2>Affordable Services</h2>
+                        <p class="para-width text-muted mb-0 fs-15">Our premier service solutions are designed to exceed your expectations. With a commitment to excellence and a proven track record of success, we deliver unparalleled results in every project we undertake.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-purple text-center">
+                                <i class="mdi mdi-cached fs-24 text-purple"></i>
+                            </div>
+                            <h6 class="mt-4">Project Manager</h6>
+                            <p class="text-muted fs-15">Project Manager We utilize standard tools specifically designed to streamline workflows and enhance efficiency for our clients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-danger text-center">
+                                <i class="mdi mdi-web fs-24 text-danger"></i>
+                            </div>
+                            <h6 class="mt-4">Web Development</h6>
+                            <p class="text-muted fs-15">Web Development We create responsive and visually appealing websites to enhance your online presence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-warning text-center">
+                                <i class="mdi mdi-access-point-network fs-24 text-warning"></i>
+                            </div>
+                            <h6 class="mt-4">Network Management</h6>
+                            <p class="text-muted fs-15 ">Network Management We provide reliable and efficient network management solutions to ensure your systems are always connected and running smoothly.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-blue text-center">
+                                <i class="mdi mdi-inbox-arrow-up fs-24 text-blue"></i>
+                            </div>
+                            <h6 class="mt-4">VR/AR Development</h6>
+                            <p class="text-muted fs-15">R/AR Development We create immersive virtual and augmented reality experiences to bring your projects to life.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-pink text-center">
+                                <i class="mdi mdi-android fs-24 text-pink"></i>
+                            </div>
+                            <h6 class="mt-4">Mobile App Development</h6>
+                            <p class="text-muted fs-15">Mobile App Development We design and develop user-friendly mobile apps tailored to meet your specific needs and enhance your digital presence.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="info-item box-shadow mt-4 pt-2">
+                        <div class="p-4">
+                            <div class="research avatar-sm bg-soft-primary text-center">
+                                <i class="mdi mdi-chart-line fs-24 text-primary"></i>
+                            </div>
+                            <h6 class="mt-4">Data Engineer</h6>
+                            <p class="text-muted fs-15">Data Engineer We provide custom data solutions to meet your specific needs and help you make informed decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end service -->
+
+
+
+    <!-- start counter -->
+    <section class="section counter" id="counter">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h6 class="mb-0 text-muted fs-15">Counter</h6>
+                        <h2>Our Achievement</h2>
+                        <p class="para-width text-muted mb-0 fs-15">We deliver tailored software solutions that exceed client expectations and drive business success.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/heart.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="20">0</h2><span
+                                class="h2 fw-bold">K</span><span class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/blueprint.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="25">0</h2>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Project Done</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/star.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="1000">0</h2><span
+                                class="h2 fw-bold">K</span><span class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Clients Review</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/idea.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <h2 class="counter_value fw-bold d-inline-block mb-0" data-bs-target="15">0</h2><span
+                                class="h2"> +</span>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Year Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end counter -->
+
+
+
+    <!-- start my-work -->
+    <section class="section my-work" id="work">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="d-flex align-items-center">
+                    <div class="left-text">
+                        <h2 class="mb-0">My Latest Work</h2>
+                        <p class="fs-15 text-muted">Prefect solution for digital experience</p>
+                    </div>
+                    <div class="right-text ms-auto">
+                        <a href="#" class="text-primary border-2 border-primary border-bottom">More Work <img
+                                src="images/home/right-arrow-primary.png" alt="" class="img-fluid mb-1 ms-2"></a>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="work-slider" id="work-slider">
+                        <div class="item">
+                            <div class="work-image position-relative">
+                                <a href="#">
+                                    <img src="images/work/img-1.jpg" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5">
+                                        <h4 class="mb-0">Web Application</h4>
+                                        <p>Management Restaurant Application</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-2.jpg" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5">
+                                        <h4 class="mb-0 text-white">Android Application</h4>
+                                        <p class="text-white">Employee Attendance Application</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-3.jpg" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-white">
+                                        <h4 class="mb-0">Web Application</h4>
+                                        <p class="text-white-50">Accounting System </p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- slider item -->
+                        <div class="item">
+                            <div class="work-image">
+                                <a href="#">
+                                    <img src="images/work/img-4.jpg" alt="" class="img-fluid">
+                                    <div class="image-title mt-5 ms-5 text-white">
+                                        <h4 class="mb-0">Web XR</h4>
+                                        <p class="text-white-50">Web XR Safety Induction</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end my-work -->
+
+
+    <!-- start pricing -->
+    
+    <!-- end pricing -->
+
+
+    <!-- start testimonial -->
+    
+    <!-- end testimonial -->
+
+    
+
+    <!-- start blog -->
+    <section class="section blog" id="blog">
+        <!-- start container -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="text-center mb-4">
+                        <h6 class="mb-0 text-muted fs-15">Client</h6>
+                        <h2>Our Client</h2>
+                        <p class="para-width text-muted mb-0 fs-15">We have successfully completed numerous projects for renowned companies, delivering reliable and efficient software solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- end row -->
+
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/viva.jpg" alt="" class="img-fluid"  width="150">
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">PT. Vitapharm</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/plnnp.png" alt="" class="img-fluid"  width="300">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <p></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">PT PLN NP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/ras.png" alt="" class="img-fluid"  width="200">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <p></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">PT RAS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/fiyansa.png" alt="" class="img-fluid" width="100">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <p></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">PT Fiyansa Mulya</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/kondoku.png" alt="" class="img-fluid" width="100">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <p></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Kondoku</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                    <div class="counter-item">
+                        <div class="counter-icon text-center">
+                            <img src="images/counter/pratama.png" alt="" class="img-fluid" width="150">
+                        </div>
+                        <div class="counter-velue text-center mt-3">
+                            <p></p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-muted fw-semibold fs-15">Klinik Pratama UNUSA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end blog -->
+
+
+
+    <!-- start contact -->
+    <section class="contact pt-5 pb-0" id="contact">
+        <!-- start container -->
+        <div class="container">
+
+            <div class="shape-1">
+                <img src="images/testi/shape.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="contact-item">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="contact-info">
+                            <div class="mb-4">
+                                <h3>Let's Connect</h3>
+                                <p class="text-muted mb-0">Looking for help? Fill the form and start a new adventure.
+                                </p>
+                            </div>
+
+                            <hr>
+
+                            <div class="info-content mt-4">
+                                <h6>Address :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-home-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">Balongbendo, Penambangan, Plumpang,<br>
+                                            Jawa Timur, Indonesia, 61263</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="info-content mt-4 pt-2">
+                                <h6>Phone :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-phone-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15"></p>
+                                    </div>
+                                </div>
+                            </div> -->
+
+
+                            <div class="info-content mt-4 pt-2">
+                                <h6>Support :</h6>
+                                <div class="d-flex">
+                                    <div class="icon">
+                                        <i class="mdi mdi-email-outline fs-24 text-primary"></i>
+                                    </div>
+                                    <div class="icon-content ms-3">
+                                        <p class="mb-0 fs-15">galehariya8@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-7 ">
+                        <div class="custom-form mt-4 ">
+                            <form id="leh-form" method="post" action="" name="leh-form">
+
+                                <h6 class="mb-0 text-muted">Let's talk</h6>
+                                <h3>Enter your project details</h3>
+                                <p class=" fs-15 text-muted">Enhance user experience with our software solutions. Many satisfied clients attest to our dedication and innovation in technology.</p>
+                                <p id="error-msg" style="opacity: 1;">
+                                    <!-- <div class="alert alert-warning">*Please enter a Name*</div> -->
+                                </p>
+
+
+                                <div id="simple-msg"></div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="name" id="name" type="text" class="form-control contact-form"
+                                                placeholder="Your name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group">
+                                            <input name="email" id="email" type="email"
+                                                class="form-control contact-form" placeholder="Your email" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <input type="text" class="form-control contact-form" name="subject" id="subject"
+                                                placeholder="Your Subject.." required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <div class="form-group mt-2">
+                                            <textarea name="message" id="comments" rows="4"
+                                                class="form-control contact-form h-auto"
+                                                placeholder="Your message..." required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row my-2">
+                                    <div class="col-lg-12 d-grid">
+                                        <input type="submit" value="Submit" id="submits" class="submitBnt btn btn-rounded btn-primary" />
+                
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="shape-2">
+                <img src="images/testi/shape-2.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="shape-3 ">
+                <img src="images/testi/shape-3.png" alt="" class="img-fluid">
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- end contact -->
+
+
+    <!-- start footer -->
+    <section class=" footer">
+        <!-- start container -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="mt-5">
+                        <a class=" logo text-uppercase" href="index.html">
+                            <img src="images/logo-light.png" class="logo-light" alt="" height="32">
+                            <!-- <img src="images/logo-light.png" class="logo-dark" alt="" height="28"> -->
+                        </a>
+                        <p class="fs-15 text-white-50 mt-4">Choosing our services is your best path to success. With our experience and expertise, we ensure your projects run smoothly and achieve outstanding results. Trust us to deliver excellence.</p>
+
+                        <div class="icon-item mt-4">
+                            <div class="d-flex">
+                                <!-- <a href="#">
+                                    <div class="social-icon facebook avatar-xs">
+                                        <i class="mdi mdi-facebook "></i>
+                                    </div>
+                                </a> -->
+                                <a target="_blank" href="https://www.instagram.com/galeh_min_h0/">
+                                    <div class="social-icon instagram avatar-xs">
+                                        <i class="mdi mdi-instagram "></i>
+                                    </div>
+                                </a>
+                                <!-- <a href="#">
+                                    <div class="social-icon twitter avatar-xs">
+                                        <i class="mdi mdi-twitter"></i>
+                                    </div>
+                                </a> -->
+                                <a target="_blank" href="https://www.linkedin.com/in/galeh-ariya-irwana-16101630b/">
+                                    <div class="social-icon linkedin avatar-xs">
+                                        <i class="mdi mdi-linkedin"></i>
+                                    </div>
+                                </a>
+                                <a target="_blank" href="https://github.com/Galeh-ariya">
+                                    <div class="social-icon pinterest avatar-xs">
+                                        <i class="mdi mdi-github"></i>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-2 mt-4">
+                    <h5 class="text-white">Company</h5>
+
+                    <!-- <ul class="footer-text list-unstyled mt-4">
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Security & Provciy</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Support</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Term & Condition</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>Contact</a></li>
+                        <li><a href="#"><i class="mdi mdi-arrow-right me-2"></i>About Us</a></li>
+                    </ul> -->
+
+                </div>
+
+                <div class="col-lg-3 mt-4">
+                    <h5 class="text-white">Linkedin</h5>
+                    <div class="row">
+                        <div class="col-lg-10">
+                            <div class="linkedin-box mt-4">
+                                <p class="mb-0 text-white-50 fs-15 mb-2">The full monty spiffing good time .</p>
+                                <a target="_blank" href="https://www.linkedin.com/in/galeh-ariya-irwana-16101630b/" class="fs-15">@Galeh.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="linkedin-content d-flex align-items-center">
+                        <div class="icon">
+                            <i class="mdi mdi-linkedin text-white fs-40"></i>
+                        </div>
+                        <div class="icon-content ms-2">
+                            <a target="_blank" href="https://www.linkedin.com/in/galeh-ariya-irwana-16101630b/" class="text-white-50">Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <h5 class="text-white">Subscribe</h5>
+                    <p class="mb-0 text-white-50 mt-4">Follow our newsletter to stay updated about agency.</p>
+                    <form action="" method="post" name="subscribe-leh">
+                        <div class="input-group my-3">
+                            <input type="email" name="email" class="form-control p-3" placeholder="example@gmail.com" aria-label="subscribe"
+                                aria-describedby="basic-addon2" required>
+                            <input type="submit" class="input-group-text bg-primary text-white px-4" id="basic-addon2" value="Go" />
+                        </div>
+                    </form>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </section>
+
+    <section class="bottom-footer py-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <p class="mb-0 text-center text-muted">©
+                        <script>document.write(new Date().getFullYear())</script> Leh min Ho. Design with <i
+                            class="mdi mdi-heart text-danger"></i>Galeh
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-    <!-- endSkils -->
-
-    <div id="gallery"></div>
-
-    <!-- Gallery -->
-    <section class="s2">
-        <div class="scan">
-            <h1>My Gallery</h1>
-        </div>
-        
-
-        <div class="imgs2" id="img">
-        </div>
-    </section>
-
-    <!-- endGallery -->
-
-    <div id="course"></div>
-
-    <!-- Online Course -->
-    <section class="s3" >
-        <div class="desc">
-            <h3>Online Course</h3>
-
-            <h2>The material is always up to date</h2>
-
-            <p>In this online course, we will discuss material about the world of lectures such as basic algorithms, basic programming of data structures and others, in addition to learning material in the world of lectures we will also learn about material that is more specific to a programming language, including Java, Kotlin, JavaScript, and many more</p>
-
-            <a class="button">LEARN MORE</a>
-            <br>
-            <br>
-            <ul class="close">
-                <li><a href="views/algoritma.html">Algoritma</a></li>
-                <li><a href="views/dasarpemrograman.html">Dasar Pemrograman</a></li>
-                <li><a href="#">Java Dasar</a></i></li>
-                <li><a href="#">Struktur Data</a></i></li>
-                <li><a href="views/tugas.html">Tugas</a></li>
-            </ul>
-            
-              <button class="c btn3"=>Close</button>
-        </div>
-
-        <div class="imgs3">
-            <img src="img/lap.png" alt="" width="700">
-        </div>
-    </section>
-
-    <!-- endOnlineCourse -->
-
-    <div id="contact"></div>
-
-    <!-- social Media -->
-    <section class="s4">
-        <h1>Social Media</h1>
-
-        <div class="sm">
-            <a href="https://www.instagram.com/galeh_archive/" target="_blank"><i class="fab fa-instagram fa-6x icon icon1"></i></a>
-            <a href="https://wa.me/+6283833357866" target="_blank"><i class="fab fa-whatsapp fa-6x icon icon2"></i></a>
-            <br>
-            <br>
-            <br>
-            <br>
-            <a href="https://github.com/Galeh-ariya" target="_blank"><i class="fab fa-github fa-6x icon icon3"></i></a>
-            <a href="https://discord.gg/S9ZXHuSK" target="_blank"><i class="fab fa-discord fa-6x icon icon4"></i></a>
-        </div>
-    </section>
-
-    <!-- endSocialMedia -->
+    <!-- end footer -->
 
 
+    <!--Bootstrap Js-->
+    <script src="js/bootstrap.bundle.min.js"></script>
 
+    <!-- Slider Js -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/swiper.min.js"></script>
 
-    <!-- foter -->
-    <section class="ftr" style="margin-top: 160px;">
-        <hr style="background-color: #fff;">
-        <h6 style="text-align: center;">Copyright &copy; Galeh Ariya Irwana 2022</h6>
-    </section>
-    <!-- endFooter -->
+    <!-- conter -->
+    <script src="js/counter.init.js"></script>
+    
+    <!-- App Js -->
+    
+    <script src="js/app.js"></script>
+    <script src="https://apis.google.com/js/api.js"></script>
+    
 
-
-
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
-
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
-
-    <script src="js/script.js"></script>
-    <script src="js/load.js"></script>
 </body>
+
+
+<!-- Mirrored from themesdesign.in/harold/layout/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 17 Dec 2024 15:56:25 GMT -->
 </html>
